@@ -1,0 +1,84 @@
+
+body{
+    background-image: url('images/tekstury-tekstura-zelenyy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+p{
+    color: rgb(207, 255, 206);
+    font-size: 10vw;
+}
+
+#clock{
+    background-color: rgba(240, 248, 255, 0.048);
+    border-radius: 100px;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(2, 79, 124), 0 0 20px rgb(0, 0, 0), 0 0 10px rgb(4, 91, 173), 0 0 25px rgb(0, 53, 122), 0 0 20px rgb(255, 255, 255);
+    animation: glitch 1s infinite;
+    filter: blur(0px);
+    transition: filter 10s linear;
+}
+
+#progressBarContainer{
+    transform: rotate(180deg)
+}
+
+.buttonSection{
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.roundButton{
+    border-radius: 50%;
+    background-color: rgba(160, 180, 166, 0.315);
+    color: #8ef7f2; /* Light cyan for the text */
+    text-shadow: 0 0 5px #000000,   /* Soft outer glow */
+                 0 0 10px #8ef7f2,  /* Slightly stronger second glow */
+                 0 0 15px #66c9c1,  /* A hint of deeper glow */
+                 0 0 20px #3ba8a0;  /* Subtle but vibrant inner glow */
+    transition: text-shadow 0.3s ease-in-out;
+    border: 0;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.7rem;
+}
+
+.button1{
+    float: left;
+    width: 49%;
+}
+
+button2{
+    float: right;
+    width: 49%;
+}
+
+.selector{
+    background-color: rgba(61, 163, 80, 0.308);
+    padding: .8rem 1.4rem .9rem .8rem;
+    width: 30%;
+    border-radius: 15px;
+    -moz-appearence: none;
+    -webkit-appearence: none;
+    appearance: none;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff; /* Light cyan for the text */
+    text-shadow: 0 0 5px #000000,   /* Soft outer glow */
+                 0 0 10px #8ef7f2,  /* Slightly stronger second glow */
+                 0 0 15px #66c9c1,  /* A hint of deeper glow */
+                 0 0 20px #3ba8a0;  /* Subtle but vibrant inner glow */
+}
+  
+  /* Decay over time */
+  .countdown.decaying {
+    filter: blur(5px);
+    color: rgba(0, 255, 0, 0.5);
+  }
+  
